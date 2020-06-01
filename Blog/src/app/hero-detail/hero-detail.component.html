@@ -1,0 +1,34 @@
+<div *ngIf="hero">
+
+  <h2>Confiture à la {{hero.name}} </h2>
+
+  <label>Recette:
+    <input [(ngModel)]="hero.recette" placeholder="name"/>
+  </label>
+  <h2></h2>
+  <label>Ingrédients:
+      <input [(ngModel)]="hero.ingredients" placeholder="name"/>
+  </label>
+
+
+<div ng-controller="myCtrl">
+   <div>
+      <label>Titre de l'article: </label>
+      <input [(ngModel)]="editName" placeholder="name"/>
+      <button (click)="save()">Save</button>
+      <h2></h2>
+
+  <label>Changer Recette:
+    <input [(ngModel)]="editRecette" placeholder="recette"/>
+    <button (click)="save1()">Save</button>
+  </label>
+  <h2></h2>
+  <label>Changer ingrédients:
+    <input [(ngModel)]="editIngredients" placeholder="ingredients"/>
+    <button (click)="save2()">Save</button>
+  </label>
+  <h2></h2>
+    <button (click)="goBack()">Retour</button>
+  </div>
+</div>
+</div>

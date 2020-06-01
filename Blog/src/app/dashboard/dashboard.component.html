@@ -1,0 +1,12 @@
+<h3>Recettes</h3>
+<div class="font-weight-bold">
+  <h1>.</h1>
+</div>
+<div class="grid grid-pad">
+  <a *ngFor="let hero of heroes" class="col-1-4"
+      routerLink="/detail/{{hero.id}}">
+    <div class="module hero">
+      <h4>{{hero.name}}</h4>
+    </div>
+  </a>
+</div>

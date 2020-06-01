@@ -1,0 +1,35 @@
+.bodybg-color {
+  background-color: rgb(235, 176, 176);
+}
+
+label {
+    display: inline-block;
+    width: 3em;
+    margin: .20em 0;
+    height: 60px;
+    color: #607D8B;
+    font-weight: bold;
+  }
+  input {
+    height: 2.5em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+  button {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
